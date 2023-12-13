@@ -1,0 +1,38 @@
+body {
+    background-color: #fefcfb;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #2a3d45
+}
+
+img {
+    width: 100%;
+}
+
+/*buttons*/
+.button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.primary-button {
+    background-color: #6c9a8b;
+    color: #fefcfb;
+}
+
+.secondary-button {
+    background-color: #fefcfb;
+    color: #6c9a8b;
+    border: 2px solid #6c9a8b;
+}
+
+/*hyperlinks*/
+a {
+    color:#6c9a8b;
+    text-decoration: none; /*no underline*/
+}
