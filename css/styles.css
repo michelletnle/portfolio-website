@@ -13,7 +13,7 @@ img {
 
 /*ids selectors for each section in my website*/
 #hero {
-    color: #6c9a8b;
+    color: #3e7967;
 }
 
 #myProjects {
@@ -36,14 +36,14 @@ img {
 }
 
 .primary-button {
-    background-color: #6c9a8b;
+    background-color: #3e7967;
     color: #fefcfb;
 }
 
 .secondary-button {
     background-color: #fefcfb;
-    color: #6c9a8b;
-    border: 2px solid #6c9a8b;
+    color: #3e7967;
+    border: 2px solid ##3e7967;
 }
 
 .button:hover {
@@ -58,6 +58,6 @@ img {
 
 /*hyperlinks*/
 a {
-    color:#6c9a8b;
+    color:#3e7967;
     text-decoration: none; /*no underline*/
 }
