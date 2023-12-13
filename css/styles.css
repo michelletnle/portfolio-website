@@ -11,8 +11,23 @@ img {
     width: 100%;
 }
 
+/*ids selectors for each section in my website*/
+#hero {
+    color: #6c9a8b;
+}
+
+#myProjects {
+    color: #fefcfb;
+}
+
+#contact-me {
+    color: #fefcfb;
+}
+
+
 /*buttons*/
 .button {
+    display: inline-block;
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
@@ -29,6 +44,16 @@ img {
     background-color: #fefcfb;
     color: #6c9a8b;
     border: 2px solid #6c9a8b;
+}
+
+.button:hover {
+    opacity: 80%;
+    text-decoration: none;
+}
+
+.button:active {
+    opacity: 60%;
+    text-decoration: none;
 }
 
 /*hyperlinks*/
