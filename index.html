@@ -19,13 +19,13 @@
     <header>
         <div>
             <!--logo-->
-            <a href="index.html">Michelle Le</a>
+            <a class="header-link" href="index.html">Michelle Le</a>
             
             <nav>
                 <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="header-link" href="index.html">Work</a></li>
+                    <li><a class="header-link" href="about.html">About</a></li>
+                    <li><a class="header-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +34,7 @@
 <!--Body-->
     <main>
         <!--Hero Section-->
-        <div>
+        <div id="hero">
             <div>
                 <h1>Hi, I'm Michelle Le.</h1>
                 <span>I'm an aspiring user developer, creating inclusive designs for a genuine experience.</span>
@@ -42,20 +42,20 @@
         </div>
         
         <!--Project Section-->
-        <div>
+        <div id="project">
             <!--Containment Block-->
             <div>
                 <h2>Projects</h2>
                 <!--PlutoPay Project-->
                 <!--2 columns-->
-                <div>
+                <div id="p-plutopay">
                     <!--First Column (Image)-->
                     <div>
                         <picture>
                             <!--Mobile first image-->
                             <source srcset="img/plutopay/homepageimg/plutopay-mockup2_one.jpg" media="(max-width:767px)">
                             <!--Larger image-->
-                            <img src="/img/plutopay/homepageimg/plutopay-mockup2_two.jpg" alt="PlutoPay mockup">
+                            <img src="img/plutopay/homepageimg/plutopay-mockup2_two.jpg" alt="PlutoPay mockup">
                         </picture>
                     </div>
 
@@ -73,14 +73,14 @@
 
                 <!--Vocabulary Project-->
                 <!--2 columns-->
-                <div>
+                <div id="p-vocab">
                     <!--First Column (Image)-->
                     <div>
                         <picture>
                             <!--Mobile first image-->
-                            <source srcset="/img/vocabularyapp/homepageimgs/revisedvocabapp_one.jpg" media="(max-width:767px)">
+                            <source srcset="img/vocabularyapp/homepageimgs/revisedvocabapp_one.jpg" media="(max-width:767px)">
                             <!--Larger image-->
-                            <img src="/img/vocabularyapp/homepageimgs/revisedvocabapp_two.jpg" alt="Vocabulary App Mockup">
+                            <img src="img/vocabularyapp/homepageimgs/revisedvocabapp_two.jpg" alt="Vocabulary App Mockup">
                         </picture>
                     </div>
 
@@ -103,7 +103,7 @@
     </main>
 
 <!--Footer-->
-    <footer id="contact-">
+    <footer id="contact">
         <!--container-->
         <div>
             <h2>Contact Me</h2>
@@ -114,14 +114,13 @@
             </p>
 
             <!--Social Media-->
-            <div>
-                <a href="https://www.linkedin.com/in/michelletnle/" target="_blank">
-                    <img src="img/icons/icons8-linkedin.svg" alt="LinkedIn logo"
-                    style="object-fit: contain;
-                    width:24px;
-                    height:24px;">
-                </a>
-            </div>
+            <ul class="social">
+                <li>
+                    <a href="https://www.linkedin.com/in/michelletnle/" target="_blank">
+                        <img src="img/icons/icons8-linkedin.svg" alt="LinkedIn logo">
+                    </a>
+                </li>
+            </ul>
 
             <!--Copyright-->
             <div>
