@@ -7,20 +7,25 @@ body {
     color: #2a3d45
 }
 
+header {
+    background-color:#3e7967;
+    color:#fefcfb;
+}
+
 img {
     width: 100%;
 }
 
 /*ids selectors for each section in my website*/
 #hero {
-    color: #3e7967;
+    color: #2a3d45;
 }
 
 #myProjects {
     color: #fefcfb;
 }
 
-#contact-me {
+#contact {
     color: #fefcfb;
 }
 
@@ -57,7 +62,30 @@ img {
 }
 
 /*hyperlinks*/
+.header-link {
+    color:#fefcfb;
+    text-decoration: none;
+}
+
 a {
     color:#3e7967;
     text-decoration: none; /*no underline*/
 }
+
+/*Style the social icons*/
+.social {
+    list-style-type: none;
+    padding: 0;
+    margin-left: -10px;
+  }
+  ​
+  .social li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  ​
+  .social img {
+    height: 32px;
+    width: 32px;
+  }
