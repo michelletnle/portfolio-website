@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,12 +16,12 @@
 </head>
 
 <body>
-<!--Header-->
+    <!--Header-->
     <header>
-        <div class="container"> 
+        <div class="container">
             <!--logo-->
             <a class="header-link" href="index.html">Michelle Le</a>
-            
+
             <nav>
                 <ul>
                     <li><a class="header-link" href="index.html">Work</a></li>
@@ -31,7 +32,7 @@
         </div>
     </header>
 
-<!--Body-->
+    <!--Body-->
     <main>
         <!--Hero Section-->
         <div id="hero">
@@ -40,34 +41,38 @@
                 <span>I'm an aspiring user developer, creating inclusive designs for a genuine experience.</span>
             </div>
         </div>
-        
+
         <!--Project Section-->
-        <div id="project">
+        <div id="projects">
             <!--Containment Block-->
             <div class="container">
                 <h2>Projects</h2>
                 <!--PlutoPay Project-->
-                <!--2 columns-->
+                <!--Row and Column-->
                 <div id="p-plutopay">
-                    <!--First Column (Image)-->
-                    <div>
+                    <!--First Column/Row (Image) -->
+                    <div class="row">
                         <picture>
                             <!--Mobile first image-->
-                            <source srcset="img/plutopay/homepageimg/plutopay-mockup2_one.jpg" media="(max-width:767px)">
+                            <source srcset="img/plutopay/homepageimg/plutopay-mockup2_one.jpg"
+                                media="(max-width:767px)">
                             <!--Larger image-->
                             <img src="img/plutopay/homepageimg/plutopay-mockup2_two.jpg" alt="PlutoPay mockup">
                         </picture>
+                        
+                        <!--Second Column (Details)-->
+                        <div>
+                            <h3>PlutoPay</h3>
+                            <p>A CareerFoundry Project.</p>
+                            <p>A responsive web app that potential users can use to transfer money, create goals and
+                                budgets,
+                                and track all of their money without the need to visit a physical bank or store. </p>
+                            <!--Button/Link for Project-->
+                            <a class="primary-button" href="plutopay.html">View Case Study</a>
+                        </div>
                     </div>
 
-                    <!--Second Column (Details)-->
-                    <div>
-                        <h3>PlutoPay</h3>
-                        <p>A CareerFoundry Project.</p>
-                        <p>A responsive web app that potential users can use to transfer money, create goals and budgets, 
-                            and track all of their money without the need to visit a physical bank or store. </p>
-                        <!--Button/Link for Project-->
-                        <a class="primary-button" href="plutopay.html">View Case Study</a>
-                    </div>
+
 
                 </div> <!--End of PlutoPay Project-->
 
@@ -75,26 +80,27 @@
                 <!--2 columns-->
                 <div id="p-vocab">
                     <!--First Column (Image)-->
-                    <div>
+                    <div class="row">
                         <picture>
                             <!--Mobile first image-->
-                            <source srcset="img/vocabularyapp/homepageimgs/revisedvocabapp_one.jpg" media="(max-width:767px)">
+                            <source srcset="img/vocabularyapp/homepageimgs/revisedvocabapp_one.jpg"
+                                media="(max-width:767px)">
                             <!--Larger image-->
-                            <img src="img/vocabularyapp/homepageimgs/revisedvocabapp_two.jpg" alt="Vocabulary App Mockup">
+                            <img src="img/vocabularyapp/homepageimgs/revisedvocabapp_two.jpg"
+                                alt="Vocabulary App Mockup">
                         </picture>
-                    </div>
+                        <!--Second Column (Details)-->
+                        <div>
+                            <h3>Vocabulary Project</h3>
+                            <p>A CareerFoundry Project.</p>
+                            <p>A vocabulary application that empowers people to learn what they thought they couldn't
+                                master.
+                                This project was the start of my UX journey.
+                            </p>
 
-                    <!--Second Column (Details)-->
-                    <div>
-                        <h3>Vocabulary Project</h3>
-                        <p>A CareerFoundry Project.</p>
-                        <p>A vocabulary application that empowers people to learn what they thought they couldn't master. 
-                            This project was the start of my UX journey.
-                        </p>
-
-                        <a class="primary-button" href="vocabularyapp.html">View Case Study</a>
-                    </div>
-
+                            <a class="primary-button" href="vocabularyapp.html">View Case Study</a>
+                        </div>
+                    </div> 
                 </div> <!--End of Vocab Project-->
 
             </div> <!--End of Containment-->
@@ -102,15 +108,15 @@
         </div> <!--End of Project Section-->
     </main>
 
-<!--Footer-->
+    <!--Footer-->
     <footer id="contact">
         <!--container-->
         <div class="container">
             <h2>Contact Me</h2>
             <p>If you would like to discuss more, share feedback, or ask any questions, please contact me.</p>
-            
-            <p> Call me at <a href="tel:316-214-0954">316-214-0954</a> or email me at 
-                <a href="mailto:michtn.le@gmail.com" >michtn.le@gmail.com</a>
+
+            <p> Call me at <a href="tel:316-214-0954">316-214-0954</a> or email me at
+                <a href="mailto:michtn.le@gmail.com">michtn.le@gmail.com</a>
             </p>
 
             <!--Social Media-->
@@ -130,4 +136,5 @@
 
     </footer>
 </body>
+
 </html>
