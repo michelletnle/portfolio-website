@@ -11,6 +11,17 @@
     margin: 32px 0;
 }
 
+/*Header and Body Styling*/
+header {
+    background-color:#3e7967;
+    color:#fefcfb;
+    text-align: center;
+    padding: 12px 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 body {
     background-color: #fefcfb;
     font-family: 'Source Sans 3', sans-serif;
@@ -20,9 +31,8 @@ body {
     color: #2a3d45
 }
 
-header {
-    background-color:#3e7967;
-    color:#fefcfb;
+main {
+    padding-top: 107.2px;
 }
 
 img {
@@ -30,9 +40,12 @@ img {
 }
 
 /*ids selectors for each section in my website*/
-#hero h1{
-    text-align: center;
-    color: #2a3d45;
+#hero {
+    background-color: #3e7967;
+    color: #fefcfb;
+    padding: 16px 0;
+    display: inline-block;
+    width: 100%;
 }
 
 #projects .row {
@@ -40,10 +53,43 @@ img {
     border-bottom: 2px solid #4a4a4a;
 }
 
+#skills h3{
+    margin: 4px;
+}
+
+#skills ul{
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
 #contact {
     color: #2a3d45;
 }
 
+/*Text Styling*/
+.center {
+    text-align: center;
+}
+
+/*Navigation Styling*/
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav > ul > li > a:visited {
+    color: #2a3d45;
+}
 
 /*buttons*/
 .button {
