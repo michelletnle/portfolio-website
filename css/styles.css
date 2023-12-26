@@ -72,6 +72,13 @@ img {
 }
 
 /*Navigation Styling*/
+header a {
+    padding: 0 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+}
+
 nav > ul {
     list-style-type: none;
     padding: 0;
@@ -147,5 +154,41 @@ nav > ul > li > a:visited {
 a {
     color:#3e7967;
     text-decoration: none; /*no underline*/
+}
+
+/*Media Queries*/
+/*Medium Devices*/
+@media only screen and (min-width: 640px) {
+header {
+    text-align: unset;
+    font-size: 18px;
+}
+
+header a{
+    display: inline-block;
+}
+
+nav {
+    width: auto;
+    float: right;
+};
+
+main {
+    padding-top: 80px;
+}
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+/*Large Devices (1024px or larger)*/
+@media only screen and (min-width: 1024px) {
+
+}
+
+/*X-Large devices (1440px or larger)*/
+@media only screen and (min-width: 1440px) {
+
 }
 
