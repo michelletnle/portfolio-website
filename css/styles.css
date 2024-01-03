@@ -42,7 +42,7 @@ img {
 /*ids selectors for each section in my website*/
 #hero {
     background-color: #36558f;
-    color: #fefcfb;
+    color: #FDFDFF;
     padding: 16px 0;
     display: inline-block;
     width: 100%;
@@ -86,6 +86,8 @@ img {
     text-decoration: none;
 }
 
+/* Pull up  */
+
 nav > ul {
     list-style-type: none;
     padding: 0;
@@ -101,34 +103,48 @@ nav > ul > li > a {
     font-weight: 700;
 }
 
-nav > ul > li > a:visited {
-    color: #2a3d45;
+nav > ul > li > a::before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
 }
+
+nav > ul > li > a:hover::before
+{
+    height: 100%;
+}
+
 
 /*buttons*/
 
 /* CSS */
-.button-21 {
+.primary-button {
   align-items: center;
   appearance: none;
-  background-color: #3e7967;
-  background-image: linear-gradient(1deg, #001c24, #00ff9e 99%);
+  background-color: #36558f;
   background-size: calc(100% + 20px) calc(100% + 20px);
   border-radius: 100px;
   border-width: 0;
   box-shadow: none;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #FDFDFF;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
   height: auto;
   justify-content: center;
   line-height: 1.5;
-  padding: 6px 20px;
+  padding: 8px 24px;
   text-align: center;
   text-decoration: none;
-  transition: background-color .2s,background-position .2s;
+  transition: opacity .2s,background-position .2s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -136,47 +152,85 @@ nav > ul > li > a:visited {
   white-space: nowrap;
 }
 
-.button-21:active,
-.button-21:focus {
+.primary-button:active,
+.primary-button:focus {
   outline: none;
 }
 
-.button-21:hover {
+.primary-button:hover {
+    opacity: 80%;
   background-position: -20px -20px;
 }
 
-.button-21:focus:not(:active) {
+.primary-button:focus:not(:active) {
   box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
 }
 
-.button {
-    display: inline-block;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 800;
-}
-
-.primary-button {
-    background-color: #3e7967;
-    color: #fefcfb;
-}
-
 .secondary-button {
-    background-color: #fefcfb;
-    color: #3e7967;
-    border: 2px solid #3e7967;
+    align-items: center;
+    appearance: none;
+    background-color: #FDFDFF;
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #36558f;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    border: 2px solid #36558f;
 }
 
-.button:hover {
-    opacity: 80%;
-    text-decoration: none;
+/*CSS Animation*/
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-.button:active {
-    opacity: 60%;
-    text-decoration: none;
+@keyframes color-change {
+    0% {fill: #EDC655}
+    50% {fill: #FCFFAD}
+    100% {fill: #F76414}
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move{
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px,48px);}
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /*Style the social icons*/
