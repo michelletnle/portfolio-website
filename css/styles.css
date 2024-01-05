@@ -55,6 +55,7 @@ a {
     text-decoration: none; /* No underlining */
 }
 
+
 a:hover {
     opacity: 60%;
     text-decoration: none;
