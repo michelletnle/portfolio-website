@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.25 em;
+    font-size: 1.75em;
     font-weight: 400;
     margin-top: -8px;
 }
@@ -364,6 +364,7 @@ nav > ul > li > a {
     
     .col-lg-5 {
         width: 40%;
+        float: left;
     }
 
     .col-lg-7 {
@@ -381,11 +382,6 @@ nav > ul > li > a {
         width: 100%
     }
 
-
-}
-
-/*X-Large devices (1440px or larger)*/
-@media only screen and (min-width: 1440px) {
 
 }
 
