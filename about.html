@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Michelle Le">
-    <meta name="description" content="Michelle Le Story">
+    <meta name="description" content="Who I am and my skillset">
     <link rel="shortcut icon" href="img/icons/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +14,20 @@
     <title>About Michelle Le</title>
 </head>
 
-<body>
+<body id="about-page">
 <!--Header-->
-    <!--Header-->
     <header>
-        <div class="container">
+        <div class="container"> <!--header container-->
             <!--logo-->
-            <a class="header-link" href="index.html">Michelle Le</a>
+            <a href="index.html">
+                <img src="img/icons/favicon.ico" class="logo" alt="Logo" >
+            </a>
 
             <nav>
-                <ul>
-                    <li><a class="header-link" href="index.html">Work</a></li>
-                    <li><a class="header-link" href="about.html">About</a></li>
-                    <li><a class="header-link" href="#contact">Contact</a></li>
+                <ul class="navigation">
+                    <li><a href="index.html">Work</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,17 +37,9 @@
     <main> 
         <div> <!--About me page-->
             <div class="container"> <!--container for whole page-->
-                <h1>About Me</h1>
-                <picture>
-                    <!--Mobile First-->
-                    <source srcset="img/professionalpic_one.jpg" media="(max-width:767px)">
-    
-                    <!--Table/Laptop-->
-                    <img src="img/professionalpic_two.jpg" alt="professional headshot">
-                </picture>
                 <div class="container"> <!--container for rows and columns-->
                     <div class="row">
-                        <div class="col-md-6"><!--First Column-->
+                        <div class="column col-lg-7"><!--First Column-->
                             <h2>I live for the adventures that shakes my soul.</h2>
                         <p>
                             I love to think creatively and challenge myself to create authentic and compassionate pieces. 
@@ -58,9 +51,10 @@
                         <a class="secondary-button" href="files/MichelleLe_Resume.pdf" target="_blank">View My Resume</a>
                         </div>
                         
-                        <div id="skills" class="col-md-6"><!--second column/row-->
-                            <h2>Skills and Tools</h2>
-                            <div> <!--My skills section-->
+                        <div id="skills" class="column col-lg-8"><!--second column/row-->
+                            <p><img src="img/professionalpic_one.jpg" alt="My Image" style="width: 40%; margin: 20px;"></p>
+                            <h2>Skills &amp; Tools</h2>
+                            <div class="column col-md-6"> <!--My skills section-->
                                 <h3>My Skills</h3>
                                 <ul>
                                     <li>HTML 5</li>
@@ -71,7 +65,7 @@
                                 </ul>
                             </div>
     
-                            <div> <!--Tools I use-->
+                            <div class="column col-md-6"> <!--Tools I use-->
                                 <h3>Tools I Use</h3>
                                     <ul>
                                         <li>Figma</li>
@@ -87,16 +81,17 @@
     </main>
 
     <!--Footer-->
-    <footer id="contact">
+    <footer id="contact" style="clear:both;">
         <!--container-->
         <div class="container">
             <h2>Contact Me</h2>
             <p>If you would like to discuss more, share feedback, or ask any questions, please contact me.</p>
 
-            <p> Call me at <a href="tel:316-214-0954">316-214-0954</a> or email me at
-                <a href="mailto:michtn.le@gmail.com">michtn.le@gmail.com</a>
-            </p>
-
+            <p> Call me at <a href="tel:316-214-0954">316-214-0954</a> or email me at </p>
+            <div> 
+                <a href="mailto:michtn.le@gmail.com" class="button contact">michtn.le@gmail.com</a>
+            </div>
+           
             <!--Social Media-->
             <ul class="social">
                 <li>
@@ -107,9 +102,7 @@
             </ul>
 
             <!--Copyright-->
-            <div>
-                <p>COPYRIGHT MICHELLE LE 2023</p>
-            </div>
+            <p>Copyright Michelle Le 2023</p>
         </div>
 
     </footer>
