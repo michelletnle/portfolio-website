@@ -327,7 +327,6 @@ nav > ul > li > a {
 
 /**float all columns to the left*/
 [class*="col-"] {
-    float:left;
     padding: 16px;
 }
 
