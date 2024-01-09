@@ -42,7 +42,7 @@ h4 {
 }
 
 main {
-    padding-top: 107.2px;
+    padding-top: 52px;
 }
 
 img {
@@ -63,17 +63,17 @@ a:hover {
 
 /*Style the current nav item*/
 .active a {
-    color:#E08E45;
+    color:#D1E1FF;
     text-decoration: underline;
 }
 
 a:active {
-    color:#E08E45;
+    color:#D1E1FF;
 }
 
 /*Pseudo class for Accessibility for Across the Web*/
 a:hover, a:focus {
-    color:#E08E45;
+    color:#D1E1FF;
     text-decoration: none;
 }
 
@@ -171,7 +171,7 @@ a:hover, a:focus {
   
   .button.contact:active {
       opacity: 0.8;
-      background-color: #E08E45;
+      background-color: #D1E1FF;
       color: #FDFDFF;
   }
 
@@ -182,37 +182,60 @@ a:hover, a:focus {
 header {
     background-color:#36558f;
     color:#FDFDFF;
-    text-align: center;
-    padding: 12px 0;
+    padding: 12px 0 4px;
     position: fixed;
     width: 100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 header .logo {
-    max-width: 48px;
+    max-width: 24px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 /*Navigation Styling*/
-nav {
-    display: inline-block;
-}
-
 nav > ul {
     list-style-type: none;
     padding: 0;
-}
-
-nav > ul > li {
-    display: inline-block;
+    margin: 0;
 }
 
 nav > ul > li > a {
     padding: 0 16px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+/*Hamburger Menu Styling*/
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 24px;
+    padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 8px 0;
+    border-top: 2px solid #D1E1FF;
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 8px;
 }
 
 #hero {
@@ -342,10 +365,30 @@ nav > ul > li > a {
         padding: 24px 0 16px;
     }
 
+    header .logo{
+        max-width: 38px;
+    }
+
     nav {
         width: auto;
         float: right;
-    };
+    }
+
+    nav > ul {
+        margin: 1em 0;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
 
     .col-md-6 {
         width: 50%;
