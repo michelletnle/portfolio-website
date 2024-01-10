@@ -255,7 +255,7 @@ nav > ul > li > a {
 #contact {
     background-color: #f2f2f2;
     color: #171A21;
-    padding: 24px;
+    padding: 16px;
 }
 
 #contact a{
@@ -398,6 +398,11 @@ nav > ul > li > a {
         padding-bottom: 40px;
     }
 
+    .contents-md-4 {
+        width: 33%;
+        float: left;
+    }
+
 }
 
 /*Large Devices (1024px or larger)*/
@@ -426,6 +431,11 @@ nav > ul > li > a {
 
     #about-page .col-md-6{
         width: 100%
+    }
+
+    .contents-lg-3 {
+        width: 33%;
+        float: left;
     }
 
 
