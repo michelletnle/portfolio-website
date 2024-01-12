@@ -45,15 +45,15 @@
        <div> <!--PlutoPay page-->
         <!--Add Table of Contents on left side of page???-->
             <div class="container"><!--total container-->
-                <div>
-                    <h1>Contents</h1>
-                    <ul>
-                        <li><a href="#pluto-hero">Introduction</a></li>
-                        <li><a href="#pluto-process">My Process</a></li>
-                        <li><a href="#pluto-overview">Overview</a></li>
-                        <li><a href="#pluto-design">Design Iterations</a></li>
-                        <li><a href="#pluto-conclusion">Conclusion</a></li>
-                    </ul>
+                <div id="pluto-content-list">
+                    <h2>Contents</h2>
+                    <ol class="tableofcontents">
+                        <li><a href="#pluto-hero" class="contents">Introduction</a></li>
+                        <li><a href="#pluto-process" class="contents">My Process</a></li>
+                        <li><a href="#pluto-overview" class="contents">Overview</a></li>
+                        <li><a href="#pluto-design" class="contents">Design Iterations</a></li>
+                        <li><a href="#pluto-conclusion" class="contents">Conclusion</a></li>
+                    </ol>
                 </div>
                 
                 <div id="pluto-hero"> <!--hero section-->
@@ -154,24 +154,34 @@
 
                         <picture> <!--Insert one user persona example-->
                             <source srcset="img/plutopay/all_imgs/serenauserpersona_one.jpg" media="(max-width:767px)">
-                            <img src="img/plutopay/all_imgs/serenauserpersona_two.jpg" alt="User persona Serena">
+                            <img src="img/plutopay/all_imgs/serenauserpersona_original.jpg" alt="User persona Serena">
                         </picture>
 
                         <div id="pluto-design"> <!--Design process section-->
-                            <h3>Design Iterative Process</h3>
+                            <h2>Design Iterative Process</h2>
                         
-                            <div> <!--Insert example of low fidelity design to be put next to high fid design img--> 
-                                <picture> 
-                                    <source srcset="img/plutopay/all_imgs/sendmoneylow_one.jpg" media="(max-width:767px)">
-                                    <img src="img/plutopay/all_imgs/sendmoneylow_two.jpg" alt="Send money to another user low fidelity design">
-                                </picture>
-                            </div>
-                            <div> <!--Insert example of high fidelity design-->
-                                <picture> 
-                                    <source srcset="img/plutopay/all_imgs/sendmoneyhigh_one.jpg" media="(max-width:767px)">
-                                    <img src="img/plutopay/all_imgs/sendmoneyhigh_two.jpg" alt="send money to another user high fidelity design">
-                                </picture>
-                            </div>
+                            <!--Two Column Photos-->
+                            <div>
+                                <div class="row"> <!--Row-->
+                                    <div class="col-md-6 col-lg-7"><!--Column-->
+                                        <div> <!--Insert example of low fidelity design to be put next to high fid design img--> 
+                                            <picture> 
+                                                <source srcset="img/plutopay/all_imgs/sendmoneylow_one.jpg" media="(max-width:767px)">
+                                                <img src="img/plutopay/all_imgs/sendmoneylow_two.jpg" alt="Send money to another user low fidelity design">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-5">
+                                        <div> <!--Insert example of high fidelity design-->
+                                            <picture> 
+                                                <source srcset="img/plutopay/all_imgs/sendmoneyhigh_one.jpg" media="(max-width:767px)">
+                                                <img src="img/plutopay/all_imgs/sendmoneyhigh_two.jpg" alt="send money to another user high fidelity design">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                           
     
                             <p>The first design was based of off competitive and user research. Through prototyping, usability testing, and overall learning 
                                 more design skills as my project developed, my design changed iteratively about seven times! One of these major design changes 
@@ -201,6 +211,7 @@
                         </div> <!--End of Design Process section-->
 
                         <div id="pluto-conclusion"> <!--Challenges and Takeaway section-->
+                            <h2>Conclusion</h2>
                             <h3>Challenges</h3>
                             <p>This was a fun project to tackle. As a person who uses multiple financial apps myself, I found it hard to not put my own personal 
                                 opinions on how the design should look. I was quickly humbled when I interviewed others and was also reminded of why user-centric 
