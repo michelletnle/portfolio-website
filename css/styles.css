@@ -42,7 +42,7 @@ h4 {
 }
 
 main {
-    padding-top: 52px;
+    padding-top: 64px;
 }
 
 img {
@@ -75,6 +75,11 @@ a:active {
 a:hover, a:focus {
     color:#D1E1FF;
     text-decoration: none;
+}
+
+/*Table of Content links*/
+a.contents {
+    color: #171A21;
 }
 
 /*buttons*/
@@ -240,10 +245,11 @@ nav > ul > li > a {
     padding: 0 0 8px;
 }
 
+/*Hero Section*/
 #hero {
     background-color: #36558f;
     color: #FDFDFF;
-    padding: 40px 0;
+    padding: 112px 0;
     display: inline-block;
     width: 100%;
 }
@@ -252,6 +258,11 @@ nav > ul > li > a {
     display: block;
 }
 
+/*About Section*/
+.resume {
+    padding: 0 148px;
+}
+/*Contact Section*/
 #contact {
     background-color: #f2f2f2;
     color: #171A21;
@@ -279,6 +290,23 @@ nav > ul > li > a {
     height: 32px;
     width: 32px;
 }
+
+/*Project Pages*/
+.tableofcontents {
+    list-style-type: upper-roman;
+}
+
+/*Pluto Pay*/
+#pluto-hero {
+    padding: 16px 0;
+    margin: 16px 0;
+}
+
+#pluto-conclusion {
+    padding: 16px 0;
+    margin: 16px 0;
+}
+
 /*End of page section styles*/
 
 /*Layout Styling Start*/
