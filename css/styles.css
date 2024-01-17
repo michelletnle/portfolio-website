@@ -5,6 +5,10 @@
 
 /*Default Body Section*/
 /*Start*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FDFDFF;
     font-family: 'Source Sans 3', sans-serif;
@@ -14,7 +18,7 @@ body {
     color: #171A21
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
     line-height: 1.4;
 }
 
@@ -29,26 +33,36 @@ h2 {
 }
 
 h3 {
+    line-height: 1px;
     font-size: 1.75em;
     font-weight: 400;
-    margin-top: -8px;
+    margin: 0;
+}
+
+#projects {
+    scroll-margin-top: 140px;
 }
     
-#about-page h3 {margin-top: 0;}
+#aboutme {
+    scroll-margin-top: 80px;
+}
 
 h4 {
+    line-height: 1px;
     font-size: 1.35em;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 main {
-    padding-top: 64px;
+    padding-top: 64px; /*Reminder - mobile styling first*/
 }
 
 img {
     width: 100%;
 }
 
+/*All about links*/
 /*Changing the default link color in navigation*/
 a {
     color: #FDFDFF;
@@ -110,6 +124,7 @@ a.contents {
     touch-action: manipulation;
     vertical-align: top;
     white-space: nowrap;
+    margin: 24px 0;
   }
   
   .primary-button:active,
@@ -156,6 +171,7 @@ a.contents {
       vertical-align: top;
       white-space: nowrap;
       border: 2px solid #36558f;
+      margin: 24px 0;
   }
   
   /*button rules for the mailto button*/
@@ -212,6 +228,10 @@ nav > ul > li > a {
     padding: 0 16px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+nav > ul > li > a > i {
+    padding: 0 8px;
 }
 
 /*Hamburger Menu Styling*/
@@ -314,6 +334,10 @@ nav > ul > li > a {
     padding: 0 16px; /*left and right padding*/
 }
 
+.paragraph {
+    padding: 0 0 24px;
+}
+
 .row{
     margin: 32px 0;
 }
@@ -388,6 +412,10 @@ nav > ul > li > a {
 @media only screen and (min-width: 640px) {
     body {
         font-size: 18px;
+    }
+
+    main {
+        padding-top: 72px;
     }
     
     header {
