@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Michelle Le">
-        <meta name="description" content="Vocabulary App Case Study.">
-        <link rel="shortcut icon" href="img/icons/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <script src="https://kit.fontawesome.com/2f7e34f5e1.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
-        <title>Vocabulary App Case Study</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michelle Le">
+    <meta name="description" content="This is the homepage of my website.">
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/2f7e34f5e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+    <title>Michelle Le, UX Developer, Work &amp; Profile</title>
+</head>
 
 <body>
     <!--Header-->
@@ -22,15 +24,16 @@
             <!--logo-->
             <div class="navtoggle" id="myNavtoggle">
                 <a href="index.html">
-                    <img src="img/icons/favicon.ico" class="logo" alt="Logo" >
+                    <img src="img/icons/favicon.ico" class="logo" alt="Logo">
                 </a>
-    
+
                 <nav>
                     <ul class="navigation">
-                        <li><a href="javascript:void(0)" onclick="history.back()"><i class="fa-solid fa-chevron-left"></i>Go Back</a></li>
+                        <li><a href="javascript:void(0)" onclick="history.back()"><i
+                                    class="fa-solid fa-chevron-left"></i>Go Back</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="javascript:void(0)" class="icon" onclick="menuToggle()">
-                            <i class="fa-solid fa-bars"></i></a>
+                                <i class="fa-solid fa-bars"></i></a>
                         </li>
                     </ul>
                 </nav>
@@ -38,39 +41,53 @@
         </div>
     </header>
 
-<!--Body-->
-    <main> 
-       <div> <!--Vocabulary App page-->
-        <!--Add Table of Contents on left side of page???-->
+    <!--Body-->
+    <main>
+        <div id="vocabpage"> <!--Vocabulary App page-->
+            <!--Add Table of Contents on left side of page???-->
             <div class="container"><!--total container-->
                 <div id="vocab-hero"><!--hero section-->
                     <h1>Vocabulary App Case Study</h1>
-                    <picture>
-                        <source srcset="img/vocabularyapp/all_imgs/vocabappmockup_one.jpg" media="(max-width:767px)">
-                        <img src="img/vocabularyapp/all_imgs/vocabappmockup_two.jpg" alt="Vocabulary App mockup">
-                    </picture>
+                    <img src="img/vocabularyapp/all_imgs/revisedvocabapp.png" class="paragraph"
+                        alt="My revised vocabulary app after feedback.">
 
-                    <h3>Main Focus:</h3>
-                    <p>Learn user centric ideology for mobile app creation.</p>
+                    <div class="paragraph">
+                        <h3>Main Focus:</h3>
+                        <p>Learn user centric ideology for mobile app creation.</p>
+                    </div>
 
-                    <h3>Skills Utilized:</h3>
-                    <p>Competitve analysis, user interviews, persona creation, card sorting, wireframing, prototyping, and usability testing.</p>
+                    <div class="paragraph">
+                        <h3>Skills Utilized:</h3>
+                        <p>Competitve analysis, user interviews, persona creation, card sorting, wireframing,
+                            prototyping, and usability testing.</p>
+                    </div>
+
                 </div>
 
                 <div id="vocab-journey"><!--Vocabulary Journey-->
                     <div><!--Introduction-->
                         <h2>Introduction</h2>
-                        <h3>Objective:</h3>
-                        <p>To empower people to  learn vocabulary or continue with their studies. This project was reviewed through CareerFoundry.</p>
-    
-                        <h3>Goal:</h3>
-                        <p>To design a mobile application that encourages users to study in any environment.</p>
-    
-                        <h3>My Role:</h3>
-                        <p>UX Designer</p>
-    
-                        <h3>Timeline:</h3>
-                        <p>1 month</p>
+
+                        <div class="paragraph">
+                            <h3>Objective:</h3>
+                            <p>To empower people to learn vocabulary or continue with their studies. This project was
+                                reviewed through CareerFoundry.</p>
+                        </div>
+
+                        <div class="paragraph">
+                            <h3>Goal:</h3>
+                            <p>To design a mobile application that encourages users to study in any environment.</p>
+                        </div>
+
+                        <div class="paragraph">
+                            <h3>My Role:</h3>
+                            <p>UX Designer</p>
+                        </div>
+
+                        <div class="paragraph">
+                            <h3>Timeline:</h3>
+                            <p>1 month</p>
+                        </div>
                     </div>
 
                     <div id="vocab-process"><!--My Process-->
@@ -106,92 +123,91 @@
 
                     <div id="vocab-overview"><!--Overview-->
                         <h2>Overview</h2>
-                        <h3>Research</h3>
-                        <p>The purpose of the app is for people of all backgrounds and ages can learn something new. Where they can use on the go for a quick study 
-                            session within their busy schedule. To get started, I did a competitive analysis on 3 similar popular apps and how they accomplish their 
-                            goals. Keeping in mind these following questions:
-                        </p>
+                        <div class="section">
+                            <h3>Research</h3>
+                            <p>The purpose of the app is for people of all backgrounds and ages can learn something new.
+                                Where they can use on the go for a quick study
+                                session within their busy schedule. To get started, I did a competitive analysis on 3
+                                similar popular apps and how they accomplish their
+                                goals. Keeping in mind these following questions:
+                            </p>
 
-                        <ul>
-                            <li>“Why do I think this is a successful product (or not) in terms of meeting the goals of the users?”</li>
-                            <li>“What do I think the designers did to make the product successful (or not), in terms of the users?”</li>
-                            <li>“How do I feel about using the product? How would I make it better?”</li>
-                        </ul>
+                            <ul>
+                                <li>“Why do I think this is a successful product (or not) in terms of meeting the goals
+                                    of
+                                    the users?”</li>
+                                <li>“What do I think the designers did to make the product successful (or not), in terms
+                                    of
+                                    the users?”</li>
+                                <li>“How do I feel about using the product? How would I make it better?”</li>
+                            </ul>
 
-                        <p>To add to this research, I needed to know firsthand how people feel about using vocabulary apps. I interviewed 3 candidates and 
-                            summarized the results into what they were doing, thinking, and feeling. From them, Oliver was born. 
-                        </p>
+                            <p>To add to this research, I needed to know firsthand how people feel about using
+                                vocabulary
+                                apps. I interviewed 3 candidates and
+                                summarized the results into what they were doing, thinking, and feeling. From them,
+                                Oliver
+                                was born.
+                            </p>
 
-                        <picture>
-                            <source srcset="img/vocabularyapp/all_imgs/persona_oliver_one.jpg" media="(max-width:767px)">
-                            <img src="img/vocabularyapp/all_imgs/persona_oliver_two.jpg" alt="Proto-Persona Oliver">
-                        </picture>
-
-                        <h3>Design</h3>
-                        <p>With enough research materials, I created some user flows to conceptualized the app's pages. Then, created cooresponding low-fidelity wireframes 
-                            to bring the app to life.
-                        </p>
-
-                        <div> <!--Have two pictures side by side. Column one-->
-                            <picture> <!--User flow example-->
-                                <source srcset="img/vocabularyapp/all_imgs/userflow1_one.jpg" media="(max-width:767px)">
-                                <img src="img/vocabularyapp/all_imgs/userflow1_two.jpg" alt="User flow example">
+                            <picture class="paragraph">
+                                <source srcset="img/vocabularyapp/all_imgs/persona_oliver_one.jpg"
+                                    media="(max-width:767px)">
+                                <img src="img/vocabularyapp/all_imgs/persona_oliver_two.jpg" class="paragraph"
+                                    alt="Proto-Persona Oliver">
                             </picture>
                         </div>
 
-                        <div>
-                            <picture> <!--low fidelity wireframe example-->
-                                <source srcset="img/vocabularyapp/all_imgs/lowfid_userflow1_one.jpg" media="(max-width:767px)">
-                                <img src="img/vocabularyapp/all_imgs/lowfid_userflow1_two.jpg" alt="low-fidelity wireframes">
+                        <div class="section">
+                            <h3>Design</h3>
+                            <p>With enough research materials, I created some user flows to conceptualized the app's
+                                pages.
+                                Then, created cooresponding low-fidelity wireframes
+                                to bring the app to life. Utilizing "Marvel", I conducted five usability test. With
+                                their
+                                feedback, I revised the app to their concerns.
+                            </p>
+
+                            <picture class="paragraph"> <!--Usability test feedback snippet-->
+                                <source srcset="img/vocabularyapp/all_imgs/usabilitytestreportexample_one.jpg"
+                                    media="(max-width:767px)">
+                                <img src="img/vocabularyapp/all_imgs/usabilitytestreportexample_two.jpg" class="paragraph"
+                                    alt="Usability test feedback snippet">
                             </picture>
+
+                            <div class="paragraph">
+                                <img src="img/vocabularyapp/all_imgs/homepageprocess.jpg"
+                                    alt="The homepage process of the vocab app after feedback.">
+                            </div>
                         </div>
-
-                        <p>Finally, it was time to test the app! I conducted five usability test through the application, Marvel. With their feedback, 
-                            I revised the app to their concerns. 
-                        </p>
-
-                        <picture> <!--Usability test feedback snippet-->
-                            <source srcset="img/vocabularyapp/all_imgs/usabilitytestreportexample_one.jpg" media="(max-width:767px)">
-                            <img src="img/vocabularyapp/all_imgs/usabilitytestreportexample_two.jpg" alt="Usability test feedback snippet">
-                        </picture>
-
-                        <div> <!--Have two pictures side by side. Column one-->
-                            <picture> <!--Before-->
-                                <source srcset="img/vocabularyapp/all_imgs/homepagebefore_one.jpg" media="(max-width:767px)">
-                                <img src="img/vocabularyapp/all_imgs/homepagebefore_two.jpg" alt="Homepage Before">
-                            </picture>
-                        </div>
-
-                        <div>
-                            <picture> <!--After-->
-                                <source srcset="img/vocabularyapp/all_imgs/homepageafter_one.jpg" media="(max-width:767px)">
-                                <img src="img/vocabularyapp/all_imgs/homepageafter_two.jpg" alt="Homepage after">
-                            </picture>
-                        </div>
-
                     </div><!--End of Overview-->
 
                     <div id="vocab-conclusion"><!--Conclusion-->
                         <div><!--Challenges-->
                             <h2>Challenges</h2>
-                            <p>Surprisingly, learning to be user-centric throughout the project was not the hardest part even though that was the main focus of this project. 
-                                The biggest challenge I faced was conducting the usability testing. Especially, trying to balance telling information without changing 
-                                the participants' way of thinking and doing. 
+                            <p>Surprisingly, learning to be user-centric throughout the project was not the hardest part
+                                even though that was the main focus of this project.
+                                The biggest challenge I faced was conducting the usability testing. Especially, trying
+                                to balance telling information without changing
+                                the participants' way of thinking and doing.
                             </p>
                         </div>
 
-                        <div>
+                        <div class="paragraph">
                             <h2>Main Takeaway</h2>
-                            <p> learned from the designs that I need to be more neat and concise. There were times the participant and the app were on the same page 
-                                but because I did not concisely write it that way, the participant was confused. I also learned the user centric ideology save times 
-                                in the app creation process. By creating for the user, features are made for them in a way they will understand. 
+                            <p> learned from the designs that I need to be more neat and concise. There were times the
+                                participant and the app were on the same page
+                                but because I did not concisely write it that way, the participant was confused. I also
+                                learned the user centric ideology save times
+                                in the app creation process. By creating for the user, features are made for them in a
+                                way they will understand.
                             </p>
                         </div>
 
                     </div><!--End of Conclusion-->
                 </div><!--End of Vocabulary Journey-->
             </div><!--End of total container-->
-       </div><!--End of content page-->
+        </div><!--End of content page-->
     </main>
 
     <!--Footer-->
@@ -199,29 +215,34 @@
         <!--container-->
         <div class="container">
             <h2>Contact Me</h2>
-            <p>If you would like to discuss more, share feedback, or ask any questions, please contact me. I'll get back to you within 24-48 hours, if not sooner!</p>
-            <div> 
+            <p>
+                If you would like to discuss more, share feedback, or ask any
+                questions, please contact me. I'll get back to you within 24-48 hours,
+                if not sooner!
+            </p>
+            <div class="emailme">
                 <a href="mailto:michtn.le@gmail.com" class="button contact">Email me at michtn.le@gmail.com!</a>
             </div>
-           
 
-            <h4>Let's Connect</h4>
-            <!--Social Media-->
-            <ul class="social">
-                <li>
-                    <a href="https://www.linkedin.com/in/michelletnle/" target="_blank">
-                        <img src="img/icons/icons8-linkedin.svg" alt="LinkedIn logo">
-                    </a>
-                </li>
-            </ul>
-
+            <div id="sociallinks">
+                <h4>Let's Connect</h4>
+                <!--Social Media-->
+                <ul class="social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/michelletnle/" target="_blank">
+                            <img src="img/icons/icons8-linkedin.svg" alt="LinkedIn logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <!--Copyright-->
             <p>Copyright Michelle Le 2023</p>
         </div>
     </footer>
-    <script 
-        src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
