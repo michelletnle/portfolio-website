@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-/*Default Body Section*/
+/*******************************************************Default Body Section*******************************************************/
 /*Start*/
 html {
     scroll-behavior: smooth;
@@ -25,11 +25,15 @@ h1, h2 {
 h1 {
     font-size: 2.75em;
     font-weight: 700;
+    margin: 0;
+    padding: 16px;
 }
 
 h2 {
     font-size: 2.25em;
     font-weight: 700;
+    margin: 0;
+    padding: 16px 0px;
 }
 
 h3 {
@@ -37,14 +41,15 @@ h3 {
     font-size: 1.75em;
     font-weight: 400;
     margin: 0;
+    padding: 16px 0px;
 }
 
 #projects {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 96px;
 }
     
 #aboutme {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 96px;
 }
 
 h4 {
@@ -52,6 +57,11 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
     margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+    padding: 8px 0;
 }
 
 main {
@@ -62,7 +72,7 @@ img {
     width: 100%;
 }
 
-/*All about links*/
+/*********************************************************All about links********************************************************/
 /*Changing the default link color in navigation*/
 a {
     color: #FDFDFF;
@@ -93,12 +103,10 @@ a:hover, a:focus {
 
 /*Table of Content links*/
 a.contents {
-    color: #171A21;
+    color: #36558f;
 }
 
 /*buttons*/
-
-/* CSS */
 .primary-button {
     align-items: center;
     appearance: none;
@@ -198,9 +206,9 @@ a.contents {
       color: #FDFDFF;
   }
 
-/*End of Default Body Section*/
+/**************************************************End of Default Body Section************************************************/
 
-/*Style the page section*/
+/****************************************************Style the page section***************************************************/
 /*Header*/
 header {
     background-color:#36558f;
@@ -269,19 +277,14 @@ nav > ul > li > a > i {
 #hero {
     background-color: #36558f;
     color: #FDFDFF;
-    padding: 112px 0;
-    display: inline-block;
-    width: 100%;
+    padding: 96px 0;
 }
 
-#hero span {
-    display: block;
+/*Project Section*/
+#projects {
+    padding: 24px 0px;
 }
 
-/*About Section*/
-.resume {
-    padding: 0 148px;
-}
 /*Contact Section*/
 #contact {
     background-color: #f2f2f2;
@@ -291,6 +294,14 @@ nav > ul > li > a > i {
 
 #contact a{
     color:#36558f;
+}
+
+#sociallinks {
+    padding: 16px 0;
+}
+
+.emailme {
+    padding: 16px 0;
 }
 
 /*Style the social icons*/
@@ -311,86 +322,163 @@ nav > ul > li > a > i {
     width: 32px;
 }
 
-/*Project Pages*/
-.tableofcontents {
-    list-style-type: upper-roman;
-}
-
-/*Pluto Pay*/
-#pluto-hero {
-    padding: 16px 0;
-    margin: 16px 0;
-}
-
 #pluto-conclusion {
     padding: 16px 0;
     margin: 16px 0;
 }
 
-/*End of page section styles*/
+/****************************************************End of page section styles********************************************/
 
-/*Layout Styling Start*/
+/*******************************************Layout Styling Start*********************************************************/
 .container {
     padding: 0 16px; /*left and right padding*/
 }
 
+.section {
+    padding: 8px 0 16px;
+}
+
 .paragraph {
-    padding: 0 0 24px;
+    padding: 16px 0;
 }
 
-.row{
-    margin: 32px 0;
+/********************************Homepage********************************/
+/*Hero*/
+.hero_parent {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-#projects .row {
-    padding-bottom: 24px;
-    border-bottom: 2px solid #4a4a4a;
+.hero_text {
+    flex: 1 1 auto;
+    padding: 16px 0px;
 }
-/*End of Layout Styling*/
+
+.hero_img {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 250px;
+    padding: 24px 16px;
+}
+
+/*Project Section*/
+.project_parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-bottom: 2px solid #4A4A4A;
+}
+
+.project_img {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 24px 16px;
+}
+
+.project_text {
+    flex: 1 1 auto;
+    padding: 24px 16px;
+}
+
+/*About Me*/
+.aboutme_parent {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme_img {
+    flex: 1 1 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 24px 16px;
+}
+
+.aboutme_text {
+    flex: 1 1 auto;
+    padding: 24px 16px;
+}
+
+.skills_parent {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: start;
+}
+
+.skills_myskills {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 24px 16px;
+}
+
+.skills_mytools {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 24px 16px;
+}
+
+/******************************End of Homepage******************************/
+/**********************************PlutoPay********************************/
+.plutopay_parent {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: start;
+}
+
+p.plutopay_parent{
+    padding-bottom: 16px;
+}
+
+.plutopay_toc {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 338px;
+    padding: 24px 16px;
+}
+
+.plutopay_toc > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 0px;
+
+}
+
+.plutopay_case {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 24px 0px;
+}
+
+#pluto-journey {
+    scroll-margin-top: 96px;
+}
+
+#pluto-process {
+    scroll-margin-top: 96px;
+}
+
+#pluto-overview {
+    scroll-margin-top: 96px;
+}
+
+#pluto-design {
+    scroll-margin-top: 96px;
+}
+
+#pluto-conclusion {
+    scroll-margin-top: 96px;
+}
+/******************************End of PlutoPay****************************/
+/************************************************End of Layout Styling*************************************************/
 
 /*Text Styling*/
 .center {
     text-align: center;
-}
-
-
-/*CSS Animation*/
-.berlin-illustration {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-@keyframes color-change {
-    0% {fill: #EDC655}
-    50% {fill: #FCFFAD}
-    100% {fill: #F76414}
-}
-
-.sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-@keyframes cloud-move{
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px,48px);}
-}
-
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 
@@ -409,13 +497,11 @@ nav > ul > li > a > i {
 }
 
 /*Medium Devices*/
-@media only screen and (min-width: 640px) {
-    body {
-        font-size: 18px;
-    }
+@media only screen and (min-width: 768px) {
 
     main {
         padding-top: 72px;
+        font-size: 1em;
     }
     
     header {
@@ -448,15 +534,87 @@ nav > ul > li > a > i {
         display: none;
     }
 
-    .col-md-6 {
-        width: 50%;
-        float: left;
-        padding-bottom: 40px;
+    .hero_text {
+        flex: 1 1 0;
+        padding: 0 24px;
+    }
+    
+    .hero_img {
+        flex: 1 1 0;
+        max-width: 256px;
     }
 
-    .contents-md-4 {
-        width: 33%;
-        float: left;
+    .project_parent {
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .project_img {
+        flex: 1 1 0;
+        max-width: max-content;
+        padding: 48px 16px;
+    }
+    
+    .project_text {
+        flex: 1 1 0;
+        padding: 48px 16px;
+    }
+
+    .aboutme_parent {
+        flex-flow: row nowrap;
+        align-items: start;
+    }
+
+    .aboutme_img {
+        flex: 1 1 0;
+        max-width: 323px;
+        height: auto;
+    }
+
+    .aboutme_text {
+        flex: 1 1 0;
+        max-width: 600px;
+        padding: 16px 32px 24px 16px;
+        height: auto;
+    }
+
+    .skills_parent {
+        flex-flow: row nowrap;
+    }
+
+    .skills_myskills {
+        flex: 1 1 0;
+        max-width: 338px;
+    }
+    
+    .skills_mytools {
+        flex: 1 1 0;
+        max-width: 338px;
+    }
+
+    .plutopay_parent {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        padding-top: 32px;
+    }
+
+    .plutopay_toc {
+        flex: 1 1 0;
+        max-width: 338px;
+    }
+
+    .plutopay_case {
+        flex: 1 1 0;
+    }
+
+    .plutopay_toc > ul > li {
+        font-size: 22px;
+        padding: 0px 0px 16px 8px;
+    
+    }
+
+    #vocabpage {
+        padding-top: 24px;
     }
 
 }
@@ -468,32 +626,37 @@ nav > ul > li > a > i {
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .col-lg-5 {
-        width: 40%;
-        float: left;
+
+    main {
+        padding-top: 72px;
+        font-size: 1em;
     }
 
-    .col-lg-7 {
-        width: 60%;
-        float: left;
-        padding-bottom: 40px;
+    .hero_parent {
+        flex-flow: row nowrap;
     }
 
-    .col-lg-8 {
-        width: 40%;
-        float: right;
+    .hero_img {
+        max-width: 324px;
+        padding: 32px 24px;
+        height: 400px;
     }
 
-    #about-page .col-md-6{
-        width: 100%
+    .aboutme_parent {
+        justify-content: start;
     }
 
-    .contents-lg-3 {
-        width: 33%;
-        float: left;
+    .aboutme_img {
+        flex: 1 1 0;
+        max-width: 500px;
+        padding: 24px 16px 24px 180px;
     }
 
+    .aboutme_text {
+        flex: 1 1 0;
+        max-width: 680px;
+        padding: 16px 32px 24px 16px;
+    }
 
 }
 
