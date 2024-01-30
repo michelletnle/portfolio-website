@@ -220,10 +220,9 @@ header {
 }
 
 header .logo {
-    max-width: 128px;
-    max-height: 48px;
-    margin-top: 2px;
-    margin-bottom: 8px;
+    max-width: 8em;
+    max-height: 8em;
+    padding-top: 4px;
 }
 
 /*Navigation Styling*/
@@ -304,6 +303,7 @@ nav > ul > li > a > i {
 .emailme {
     padding: 16px 0;
 }
+
 
 /*Style the social icons*/
 .social {
