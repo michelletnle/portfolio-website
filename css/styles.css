@@ -145,8 +145,7 @@ a.contents {
   .primary-button:hover {
       opacity: 80%;
       color:#FDFDFF;
-      background-color: #36558f;
-    background-position: -20px -20px;
+      background-position: -20px -20px;
   }
   
   .primary-button:focus:not(:active) {
@@ -185,7 +184,6 @@ a.contents {
   /*button rules for the mailto button*/
   .button.contact {
       background-color: transparent;
-      color:#36558f;
       text-transform: uppercase;
       background-size: calc(100% + 20px) calc(100% + 20px);
       border-radius: 100px;
@@ -195,8 +193,8 @@ a.contents {
   }
   
   .button.contact:hover{
-      opacity: 0.8;
-      background-color: #36558f;
+      opacity: 0.3;
+      background-color: #d1e1ff;
       color:#FDFDFF;
   }
   
