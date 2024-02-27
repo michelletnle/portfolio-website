@@ -39,7 +39,7 @@ h2 {
 h3 {
     line-height: 1px;
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
     padding: 16px 0px;
 }
@@ -56,7 +56,8 @@ h4 {
     line-height: 1px;
     font-size: 1.35em;
     font-weight: 400;
-    margin-bottom: 0;
+    padding: 24px 0;
+    margin: 0;
 }
 
 p {
@@ -338,7 +339,7 @@ nav > ul > li > a > i {
 }
 
 .paragraph {
-    padding: 16px 0;
+    padding: 24px 0;
 }
 
 /********************************Homepage********************************/
